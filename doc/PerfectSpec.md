@@ -56,9 +56,9 @@ Results must be initialized in one of possible ways or compilation would fail.
 ```perfect
 swap:(param1:int, param2:int)(result1:int, result2:int)
 {
-	result1 = param2; result2 = param1
-'OR'  out(result1:param2, result2: param1)
-'OR'  out(param2, param1)
+		result1 = param2; result2 = param1
+`OR`    out(result1:param2, result2: param1)
+`OR`    out(param2, param1)
 }
 (a, b) = swap(5, 6)
 ```
@@ -172,12 +172,12 @@ fenfal:Gun(Winchester308)
 sharp(type):
 {
 	..raw:@type
-	..counter:@integer
+	..counter:@int
 	
 	create:(initptr:@type)
 	{
 		raw = initptr
-		counter = integer.new(1)
+		counter = int.new(1)
 	}
 	create:(src:@sharp(type))
 	{
