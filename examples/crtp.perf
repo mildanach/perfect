@@ -1,0 +1,10 @@
+``Welcome to Curiously Recurring Template Pattern
+  for Perfect Language``
+
+CRTP(T):{ '==':(a:T, b:T)(bool) {!(a<b | a>b)} }
+
+Deriv:CRTP(Deriv)
+{
+	.content:real
+	'<':(a:self,b:self)(bool) { a.content<b.content }
+}

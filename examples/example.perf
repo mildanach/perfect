@@ -1,0 +1,34 @@
+map = import(common.containers.map)
+algos = import(common.algos)
+
+title:string = "Welcome to Perfect"
+
+`----------
+Theta(T,V):Lambda(T)
+{
+	``now you know
+			kung-fu``
+	create:(t:@T) { tau = t }
+	tau : $@T ``const pointer``
+	generator : V[256]
+	quod: (x:int)(r:V, q:int)
+	{
+		out(r: generator[x], q: x+1)
+	}
+	modantum: (x:real)(y:real'nodiscard')
+	{
+		y = match(x)
+		{
+			x<0  : x - 10
+			x==0 : -5
+			x>0  : x*x
+		}
+	}
+}
+
+Psi { Sub = int }
+Gamma(T) { S = T.Sub }
+g:Gamma(Psi) { .sub:S }
+
+Zeta(Types[]) { OK = com.All(Types, com.IsBasicType(Types.Each)) }
+StaticAssert(Zeta(int, real, string).OK)
