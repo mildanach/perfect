@@ -1,0 +1,14 @@
+``F.R.O.G.``
+Animal(Kind)
+{
+	croak:()(sound:string) 'abstract'
+}
+
+Frog : Animal(Aquatic)
+{
+	..treasure : int
+	
+	create:(coins:int) { treasure = coins }
+	create:(source:@Frog) {  treasure = source.treasure }
+	croak:()(sound:string) { "ribbit" }
+}
